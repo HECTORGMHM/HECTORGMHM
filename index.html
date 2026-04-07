@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Héctor Gael Morales Moreno — CV</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-brand">HGMM</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#header"        class="nav-link active" data-section="header">Inicio</a></li>
+      <li><a href="#experiencia"   class="nav-link" data-section="experiencia">Experiencia</a></li>
+      <li><a href="#educacion"     class="nav-link" data-section="educacion">Educación</a></li>
+      <li><a href="#skills"        class="nav-link" data-section="skills">Habilidades</a></li>
+      <li><a href="#certificaciones" class="nav-link" data-section="certificaciones">Certificaciones</a></li>
+      <li><a href="#intereses"     class="nav-link" data-section="intereses">Intereses</a></li>
+      <li><a href="#lenguajes"     class="nav-link" data-section="lenguajes">Idiomas</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="app">
+
+    <!-- ── HEADER / INICIO ── -->
+    <section id="header" class="section active" aria-label="Encabezado">
+      <div class="hero-container">
+        <div class="hero-avatar">HG</div>
+        <h1 class="hero-name">Héctor Gael Morales Moreno</h1>
+        <p class="hero-title">Estudiante de Tecnologías de la Información en las Organizaciones</p>
+        <div class="hero-meta">
+          <span class="badge">📍 Orizaba, Veracruz, México</span>
+          <span class="badge">🎓 Universidad Veracruzana (UV)</span>
+        </div>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="showSection('experiencia')">Ver Experiencia</button>
+          <button class="btn-secondary" onclick="showSection('skills')">Ver Habilidades</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Tecnologías</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Tesis en curso</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCIA ── -->
+    <section id="experiencia" class="section" aria-label="Experiencia laboral">
+      <div class="section-container">
+        <h2 class="section-title">Experiencia Profesional</h2>
+        <p class="section-subtitle">Trayectoria laboral y proyectos relevantes</p>
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Marketing Digital y Contenido Visual</h3>
+                <span class="timeline-company">TVS Orizaba</span>
+                <span class="timeline-period">2025 – Presente</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Estrategia de contenidos y marketing digital para la agencia de motocicletas.</li>
+                <li>Creación de material publicitario y edición de video especializado para redes sociales.</li>
+              </ul>
+              <div class="tag-group">
+                <span class="tag">Marketing Digital</span>
+                <span class="tag">Edición de Video</span>
+                <span class="tag">Redes Sociales</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Asistente Técnico <em>(Servicio Social)</em></h3>
+                <span class="timeline-company">Universidad Veracruzana</span>
+                <span class="timeline-period">2026 – Presente</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Gestión administrativa y control de asistencia.</li>
+                <li>Capacitación avanzada en Programación orientada a Inteligencia Artificial.</li>
+              </ul>
+              <div class="tag-group">
+                <span class="tag">Gestión Administrativa</span>
+                <span class="tag">IA</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Proyectos de IT e Investigación</h3>
+                <span class="timeline-company">Universidad Veracruzana</span>
+                <span class="timeline-period">2024 – Presente</span>
+              </div>
+              <ul class="timeline-list">
+                <li><strong>Tesis:</strong> "Impacto de la actividad física en el estrés académico" — implementación de smart bracelets para análisis biométrico en tiempo real.</li>
+                <li><strong>Análisis de Datos:</strong> Dashboards e inteligencia de negocios con Power BI; gestión de bases de datos con PostgreSQL y PostGIS.</li>
+                <li><strong>Desarrollo de Software:</strong> Programación de herramientas funcionales en Python (ej. Teclado Virtual).</li>
+              </ul>
+              <div class="tag-group">
+                <span class="tag">Power BI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Python</span>
+                <span class="tag">Big Data</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCACIÓN ── -->
+    <section id="educacion" class="section" aria-label="Educación">
+      <div class="section-container">
+        <h2 class="section-title">Formación Académica</h2>
+        <p class="section-subtitle">Base académica y crecimiento continuo</p>
+        <div class="edu-grid">
+
+          <div class="edu-card card-highlight">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-body">
+              <h3>Licenciatura en Tecnologías de la Información en las Organizaciones</h3>
+              <p class="edu-institution">Universidad Veracruzana (UV) · Orizaba, Ver.</p>
+              <span class="edu-status status-active">En curso — Fase final</span>
+              <p class="edu-note">Proyecto de Tesis y Servicio Social en progreso.</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">🌐</div>
+            <div class="edu-body">
+              <h3>Inglés — Nivel Intermedio</h3>
+              <p class="edu-institution">Formación continua en curso</p>
+              <span class="edu-status status-active">Activo</span>
+              <div class="progress-bar-wrapper" aria-label="Nivel de inglés: 55%">
+                <div class="progress-bar" style="width: 55%"></div>
+              </div>
+              <p class="edu-note">55% — Intermedio (B1)</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">🔬</div>
+            <div class="edu-body">
+              <h3>Investigación en Datos Biométricos</h3>
+              <p class="edu-institution">Universidad Veracruzana</p>
+              <span class="edu-status status-active">En desarrollo</span>
+              <p class="edu-note">Análisis de datos de salud con dispositivos IoT (smart bracelets).</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section" aria-label="Habilidades">
+      <div class="section-container">
+        <h2 class="section-title">Competencias Técnicas</h2>
+        <p class="section-subtitle">Stack tecnológico y aptitudes profesionales</p>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">🐍</div>
+            <h3>Programación</h3>
+            <p>Python — especialización en automatización e Inteligencia Artificial.</p>
+            <div class="progress-bar-wrapper" aria-label="Python: 80%">
+              <div class="progress-bar" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <h3>Bases de Datos</h3>
+            <p>SQL avanzado — PostgreSQL y PostGIS para datos espaciales.</p>
+            <div class="progress-bar-wrapper" aria-label="SQL: 75%">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🛡️</div>
+            <h3>Ciberseguridad</h3>
+            <p>Análisis de vulnerabilidades bajo MITRE ATT&amp;CK y métricas CVSS.</p>
+            <div class="progress-bar-wrapper" aria-label="Ciberseguridad: 65%">
+              <div class="progress-bar" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">📊</div>
+            <h3>Visualización &amp; Big Data</h3>
+            <p>Power BI — dashboards e inteligencia de negocios.</p>
+            <div class="progress-bar-wrapper" aria-label="Power BI: 70%">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🎯</div>
+            <h3>Marketing Digital</h3>
+            <p>Estrategia de contenidos, edición de video y redes sociales.</p>
+            <div class="progress-bar-wrapper" aria-label="Marketing: 70%">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🤾</div>
+            <h3>Alto Rendimiento</h3>
+            <p>Handball — Pívot y Central. Trabajo en equipo y disciplina.</p>
+            <div class="progress-bar-wrapper" aria-label="Handball: 90%">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICACIONES ── -->
+    <section id="certificaciones" class="section" aria-label="Certificaciones">
+      <div class="section-container">
+        <h2 class="section-title">Certificaciones</h2>
+        <p class="section-subtitle">Reconocimientos y formación especializada</p>
+        <div class="cert-grid">
+
+          <div class="cert-card cert-placeholder">
+            <div class="cert-icon">🏅</div>
+            <h3>Próximas Certificaciones</h3>
+            <p>Este espacio está reservado para certificaciones en proceso de obtención:</p>
+            <ul class="cert-list">
+              <li>🔐 Ciberseguridad — CEH / CompTIA Security+</li>
+              <li>📊 Microsoft Power BI Data Analyst</li>
+              <li>🐍 Python Institute — PCEP / PCAP</li>
+              <li>☁️ AWS / Azure Fundamentals</li>
+            </ul>
+            <span class="cert-badge badge-pending">En progreso</span>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">🎓</div>
+            <h3>Formación Universitaria</h3>
+            <p>Licenciatura en Tecnologías de la Información en las Organizaciones.</p>
+            <p class="cert-issuer">Universidad Veracruzana</p>
+            <span class="cert-badge badge-active">En curso</span>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">🤖</div>
+            <h3>Capacitación en IA</h3>
+            <p>Programación orientada a Inteligencia Artificial — Servicio Social UV.</p>
+            <p class="cert-issuer">Universidad Veracruzana</p>
+            <span class="cert-badge badge-active">2026</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INTERESES ── -->
+    <section id="intereses" class="section" aria-label="Intereses">
+      <div class="section-container">
+        <h2 class="section-title">Intereses</h2>
+        <p class="section-subtitle">Áreas de pasión y desarrollo personal</p>
+        <div class="interest-grid">
+
+          <div class="interest-card">
+            <div class="interest-icon">🛡️</div>
+            <h3>Ciberseguridad</h3>
+            <p>Análisis de amenazas, vulnerabilidades y marcos de seguridad como MITRE ATT&amp;CK y CVSS.</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-icon">📡</div>
+            <h3>Datos Biométricos</h3>
+            <p>Recolección y análisis de datos de salud en tiempo real con dispositivos IoT para investigación académica.</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-icon">🎵</div>
+            <h3>Música Electrónica</h3>
+            <p>Aficionado al House y Techno — géneros que combinan precisión técnica y creatividad artística.</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-icon">🤾</div>
+            <h3>Handball</h3>
+            <p>Jugador de alto rendimiento — posiciones Pívot y Central. El deporte forja disciplina y trabajo en equipo.</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-icon">🤖</div>
+            <h3>Inteligencia Artificial</h3>
+            <p>Automatización de procesos y desarrollo de soluciones con Python orientadas a IA.</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-icon">📊</div>
+            <h3>Big Data &amp; Analytics</h3>
+            <p>Transformar grandes volúmenes de datos en decisiones estratégicas mediante visualización y análisis.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LENGUAJES / IDIOMAS ── -->
+    <section id="lenguajes" class="section" aria-label="Idiomas">
+      <div class="section-container">
+        <h2 class="section-title">Idiomas</h2>
+        <p class="section-subtitle">Competencia lingüística y comunicación global</p>
+        <div class="lang-grid">
+
+          <div class="lang-card">
+            <div class="lang-flag">🇲🇽</div>
+            <h3>Español</h3>
+            <span class="lang-level level-native">Nativo</span>
+            <div class="progress-bar-wrapper" aria-label="Español: 100%">
+              <div class="progress-bar" style="width: 100%"></div>
+            </div>
+            <ul class="lang-details">
+              <li>Comprensión: Completa</li>
+              <li>Expresión oral: Nativa</li>
+              <li>Expresión escrita: Avanzada</li>
+            </ul>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-flag">🇺🇸</div>
+            <h3>Inglés</h3>
+            <span class="lang-level level-intermediate">Intermedio (B1)</span>
+            <div class="progress-bar-wrapper" aria-label="Inglés: 55%">
+              <div class="progress-bar" style="width: 55%"></div>
+            </div>
+            <ul class="lang-details">
+              <li>Comprensión lectora: Buena</li>
+              <li>Comunicación técnica: Funcional</li>
+              <li>Formación continua en curso</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <p>&copy; 2026 Héctor Gael Morales Moreno · Orizaba, Veracruz, México</p>
+    <p class="footer-sub">Universidad Veracruzana — Tecnologías de la Información en las Organizaciones</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
