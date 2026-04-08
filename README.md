@@ -8,13 +8,6 @@ Sitio web estático personal que funciona como CV/portafolio, desplegado en [Git
 ├── index.html           # SPA principal (contiene todas las secciones)
 ├── styles.css           # Estilos globales (tema oscuro minimalista)
 ├── script.js            # Navegación dinámica (hash-based SPA)
-├── header.html          # Sección hero / encabezado (standalone)
-├── experiencia.html     # Experiencia laboral (standalone)
-├── eduacion.html        # Educación académica (standalone)
-├── skills.html          # Habilidades técnicas y blandas (standalone)
-├── certificaciones.html # Certificaciones obtenidas (standalone)
-├── lenguajes.html       # Idiomas (standalone)
-├── intereses.html       # Intereses personales/profesionales (standalone)
 └── .github/
     └── workflows/
         └── static.yml   # Workflow de GitHub Actions para despliegue automático
