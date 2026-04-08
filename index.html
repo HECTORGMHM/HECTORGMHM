@@ -8,256 +8,229 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- =====================
-         Barra de navegación
-         ===================== -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#educacion">Educación</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#certificaciones">Certificaciones</a></li>
-          <li><a href="#lenguajes">Idiomas</a></li>
-          <li><a href="#intereses">Intereses</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="cv-wrapper">
 
-    <main>
       <!-- =====================
-           SECCIÓN: Hero / Header
+           ENCABEZADO
            ===================== -->
-      <section id="hero" class="hero-section">
-        <div class="hero">
+      <header class="cv-header">
+        <div class="cv-header__left">
+          <div class="cv-header__initials">HGM</div>
+          <div class="cv-header__info">
+            <h1 class="cv-header__name">Héctor Gael Morales Moreno</h1>
+            <p class="cv-header__description">
+              Estudiante de Tecnologías de la Información en las Organizaciones · Universidad Veracruzana ·
+              Orizaba, Veracruz, México. Apasionado por ciberseguridad, desarrollo web y análisis de datos.
+            </p>
+          </div>
+        </div>
+        <div class="cv-header__right">
           <img
-            class="hero__photo"
+            class="cv-header__photo"
             src="https://i.imgur.com/G3P2F4M.png"
             alt="Foto de perfil de Héctor Gael Morales Moreno"
           />
-          <h1 class="hero__name">Héctor Gael Morales Moreno</h1>
-          <p class="hero__title">Estudiante de Tecnologías de la Información · Universidad Veracruzana</p>
-          <ul class="hero__info">
-            <li><em class="icon">📍</em> Orizaba, Veracruz, México</li>
-            <li><em class="icon">🎓</em> UV — Ingeniería en TI (en curso)</li>
+          <ul class="cv-header__contact">
             <li>
-              <em class="icon">🐙</em>
+              <span class="contact-icon">✉</span>
+              <a href="mailto:gaelmm68@hotmail.com">gaelmm68@hotmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">⊙</span>
               <a href="https://github.com/HECTORGMHM" target="_blank" rel="noopener noreferrer">github.com/HECTORGMHM</a>
             </li>
             <li>
-              <em class="icon">✉️</em>
-              <a href="mailto:hector.morales@example.com">hector.morales@example.com</a>
+              <span class="contact-icon">⌖</span>
+              Orizaba, Veracruz, México
             </li>
           </ul>
         </div>
-      </section>
+      </header>
+
+      <hr class="cv-divider" />
 
       <!-- =====================
-           SECCIÓN: Experiencia
+           CUERPO: DOS COLUMNAS
            ===================== -->
-      <section id="experiencia">
-        <h2>Experiencia</h2>
+      <div class="cv-body">
 
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Desarrollador Web (Proyectos académicos)</span>
-              <span class="timeline__period">2023 — Presente</span>
+        <!-- COLUMNA IZQUIERDA (60%) -->
+        <main class="cv-col cv-col--left">
+
+          <!-- Work Experience -->
+          <section class="cv-section">
+            <h2 class="cv-section__title">Work Experience</h2>
+            <div class="cv-section__bar"></div>
+
+            <div class="cv-job">
+              <div class="cv-job__meta">
+                <span class="cv-job__period">2026 – Presente</span>
+                <span class="cv-job__separator">|</span>
+                <span class="cv-job__role">Asistente Técnico (Servicio Social)</span>
+                <span class="cv-job__separator">|</span>
+                <span class="cv-job__company">Universidad Veracruzana</span>
+              </div>
+              <div class="cv-job__location">Orizaba, Veracruz</div>
+              <ul class="cv-job__details">
+                <li>Apoyo técnico en la gestión y mantenimiento de sistemas de información institucionales.</li>
+                <li>Soporte en la implementación de herramientas tecnológicas para el área académica.</li>
+                <li>Análisis y documentación de procesos para la mejora continua de servicios digitales.</li>
+              </ul>
             </div>
-            <div class="timeline__org">Universidad Veracruzana · Orizaba, Veracruz</div>
-            <ul class="timeline__details">
-              <li>Diseño y desarrollo de sitios web estáticos con HTML5, CSS3 y JavaScript.</li>
-              <li>Gestión de repositorios con Git y GitHub para trabajo colaborativo.</li>
-              <li>Implementación de páginas responsivas con enfoque en UX.</li>
-            </ul>
-          </div>
 
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Colaborador Open Source</span>
-              <span class="timeline__period">2024 — Presente</span>
+            <div class="cv-job">
+              <div class="cv-job__meta">
+                <span class="cv-job__period">2025 – Presente</span>
+                <span class="cv-job__separator">|</span>
+                <span class="cv-job__role">Marketing Digital y Contenido Visual</span>
+                <span class="cv-job__separator">|</span>
+                <span class="cv-job__company">TVS Orizaba</span>
+              </div>
+              <div class="cv-job__location">Orizaba, Veracruz</div>
+              <ul class="cv-job__details">
+                <li>Creación y gestión de contenido visual para redes sociales y plataformas digitales.</li>
+                <li>Diseño de campañas de marketing digital orientadas a aumentar el alcance de la marca.</li>
+                <li>Edición de video y producción de material multimedia para comunicación corporativa.</li>
+              </ul>
             </div>
-            <div class="timeline__org">GitHub · Remoto</div>
-            <ul class="timeline__details">
-              <li>Contribución a proyectos de código abierto mediante pull requests.</li>
-              <li>Documentación y reporte de issues en repositorios públicos.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- =====================
-           SECCIÓN: Educación
-           ===================== -->
-      <section id="educacion">
-        <h2>Educación</h2>
+          <!-- Education -->
+          <section class="cv-section">
+            <h2 class="cv-section__title">Education</h2>
+            <div class="cv-section__bar"></div>
 
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Ingeniería en Tecnologías de la Información</span>
-              <span class="timeline__period">2022 — Presente</span>
+            <div class="cv-job">
+              <div class="cv-job__meta">
+                <span class="cv-job__period">En curso</span>
+                <span class="cv-job__separator">|</span>
+                <span class="cv-job__role">Lic. en Tecnologías de la Información en las Organizaciones</span>
+              </div>
+              <div class="cv-job__location">Universidad Veracruzana · Orizaba, Veracruz</div>
+              <ul class="cv-job__details">
+                <li>Formación en desarrollo de software, bases de datos, ciberseguridad y análisis de datos.</li>
+                <li>Proyectos integradores con tecnologías web, back-end y sistemas de información.</li>
+              </ul>
             </div>
-            <div class="timeline__org">Universidad Veracruzana · Orizaba, Veracruz</div>
-            <ul class="timeline__details">
-              <li>Desarrollo de software, bases de datos, redes y sistemas operativos.</li>
-              <li>Proyectos integradores con tecnologías web y de back-end.</li>
-            </ul>
-          </div>
+          </section>
 
-          <div class="timeline__item">
-            <div class="timeline__header">
-              <span class="timeline__role">Bachillerato General</span>
-              <span class="timeline__period">2019 — 2022</span>
-            </div>
-            <div class="timeline__org">Orizaba, Veracruz</div>
-            <ul class="timeline__details">
-              <li>Orientación en Ciencias Exactas e Ingeniería.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </main>
 
-      <!-- =====================
-           SECCIÓN: Habilidades
-           ===================== -->
-      <section id="skills">
-        <h2>Habilidades</h2>
+        <!-- COLUMNA DERECHA (40%) -->
+        <aside class="cv-col cv-col--right">
 
-        <div class="skills-grid">
-          <div class="skills-group">
-            <h3>Frontend</h3>
+          <!-- Skills & Competences -->
+          <section class="cv-section">
+            <h2 class="cv-section__title">Skills &amp; Competences</h2>
+            <div class="cv-section__bar"></div>
+
             <ul class="skills-list">
-              <li><span class="skill-name">HTML5</span><span class="skill-bar"><span style="width:90%"></span></span></li>
-              <li><span class="skill-name">CSS3</span><span class="skill-bar"><span style="width:85%"></span></span></li>
-              <li><span class="skill-name">JavaScript</span><span class="skill-bar"><span style="width:75%"></span></span></li>
-              <li><span class="skill-name">Responsive Design</span><span class="skill-bar"><span style="width:80%"></span></span></li>
+              <li>
+                <span class="skill-name">Python</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="65"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Power BI</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="60"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Ciberseguridad</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="65"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Git</span>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+              </li>
             </ul>
-          </div>
+          </section>
 
-          <div class="skills-group">
-            <h3>Herramientas</h3>
-            <ul class="skills-list">
-              <li><span class="skill-name">Git</span><span class="skill-bar"><span style="width:80%"></span></span></li>
-              <li><span class="skill-name">GitHub</span><span class="skill-bar"><span style="width:85%"></span></span></li>
-              <li><span class="skill-name">VS Code</span><span class="skill-bar"><span style="width:90%"></span></span></li>
-              <li><span class="skill-name">Linux / CLI</span><span class="skill-bar"><span style="width:65%"></span></span></li>
+          <!-- Achievements & Certificates -->
+          <section class="cv-section">
+            <h2 class="cv-section__title">Achievements &amp; Certificates</h2>
+            <div class="cv-section__bar"></div>
+
+            <ul class="achievements-list">
+              <li class="achievement-item">
+                <span class="achievement-icon">🏆</span>
+                <div>
+                  <strong>GitHub Foundations</strong>
+                  <span class="achievement-year">2024</span>
+                </div>
+              </li>
+              <li class="achievement-item">
+                <span class="achievement-icon">🌐</span>
+                <div>
+                  <strong>Desarrollo Web Responsivo</strong>
+                  <span class="achievement-year">2023</span>
+                </div>
+              </li>
+              <li class="achievement-item">
+                <span class="achievement-icon">⚡</span>
+                <div>
+                  <strong>JavaScript Algorithms &amp; Data Structures</strong>
+                  <span class="achievement-year">2024</span>
+                </div>
+              </li>
             </ul>
-          </div>
+          </section>
 
-          <div class="skills-group">
-            <h3>Otros</h3>
-            <ul class="skills-list">
-              <li><span class="skill-name">Python</span><span class="skill-bar"><span style="width:60%"></span></span></li>
-              <li><span class="skill-name">SQL</span><span class="skill-bar"><span style="width:55%"></span></span></li>
-              <li><span class="skill-name">Resolución de problemas</span><span class="skill-bar"><span style="width:85%"></span></span></li>
-              <li><span class="skill-name">Trabajo en equipo</span><span class="skill-bar"><span style="width:90%"></span></span></li>
+          <!-- Languages -->
+          <section class="cv-section">
+            <h2 class="cv-section__title">Languages</h2>
+            <div class="cv-section__bar"></div>
+
+            <ul class="lang-list">
+              <li class="lang-item">
+                <span class="lang-flag">🇲🇽</span>
+                <div class="lang-info">
+                  <span class="lang-name">Español</span>
+                  <span class="lang-level lang-level--native">Nativo</span>
+                </div>
+              </li>
+              <li class="lang-item">
+                <span class="lang-flag">🇺🇸</span>
+                <div class="lang-info">
+                  <span class="lang-name">Inglés</span>
+                  <span class="lang-level lang-level--intermediate">Intermedio – B1</span>
+                </div>
+              </li>
             </ul>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- =====================
-           SECCIÓN: Certificaciones
-           ===================== -->
-      <section id="certificaciones">
-        <h2>Certificaciones</h2>
+          <!-- Interests -->
+          <section class="cv-section">
+            <h2 class="cv-section__title">Interests</h2>
+            <div class="cv-section__bar"></div>
 
-        <div class="cards-grid">
-          <div class="card">
-            <div class="card__icon">🏆</div>
-            <div class="card__body">
-              <h3>GitHub Foundations</h3>
-              <p class="card__meta">GitHub · 2024</p>
-              <p>Fundamentos de versionamiento, colaboración y flujos de trabajo en GitHub.</p>
+            <div class="tags">
+              <span class="tag">🔐 Ciberseguridad</span>
+              <span class="tag">📊 Análisis de datos biométricos</span>
+              <span class="tag">💻 Desarrollo Web</span>
+              <span class="tag">🔓 Open Source</span>
+              <span class="tag">🎵 Música electrónica (House/Techno)</span>
             </div>
-          </div>
+          </section>
 
-          <div class="card">
-            <div class="card__icon">🌐</div>
-            <div class="card__body">
-              <h3>Desarrollo Web Responsivo</h3>
-              <p class="card__meta">freeCodeCamp · 2023</p>
-              <p>HTML5, CSS3, Flexbox, Grid y diseño adaptable a múltiples dispositivos.</p>
-            </div>
-          </div>
+        </aside>
+      </div><!-- /.cv-body -->
 
-          <div class="card">
-            <div class="card__icon">⚡</div>
-            <div class="card__body">
-              <h3>JavaScript Algorithms &amp; Data Structures</h3>
-              <p class="card__meta">freeCodeCamp · 2024</p>
-              <p>Algoritmos, estructuras de datos y programación funcional con JS.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================
-           SECCIÓN: Idiomas
-           ===================== -->
-      <section id="lenguajes">
-        <h2>Idiomas</h2>
-
-        <ul class="lang-list">
-          <li class="lang-item">
-            <span class="lang-name">🇲🇽 Español</span>
-            <span class="lang-level lang-level--native">Nativo</span>
-          </li>
-          <li class="lang-item">
-            <span class="lang-name">🇺🇸 Inglés</span>
-            <span class="lang-level lang-level--intermediate">Intermedio · B1 (formación continua)</span>
-          </li>
-        </ul>
-      </section>
-
-      <!-- =====================
-           SECCIÓN: Intereses
-           ===================== -->
-      <section id="intereses">
-        <h2>Intereses</h2>
-
-        <div class="tags">
-          <span class="tag">💻 Desarrollo Web</span>
-          <span class="tag">🔓 Open Source</span>
-          <span class="tag">🤖 Inteligencia Artificial</span>
-          <span class="tag">🎮 Game Dev</span>
-          <span class="tag">📡 Redes y Seguridad</span>
-          <span class="tag">📚 Aprendizaje continuo</span>
-          <span class="tag">🐧 Linux</span>
-          <span class="tag">☁️ Cloud Computing</span>
-        </div>
-      </section>
-
-      <!-- =====================
-           SECCIÓN: Contacto
-           ===================== -->
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes un proyecto o propuesta? No dudes en escribirme.</p>
-
-        <ul class="contact-list">
-          <li>
-            <em class="icon">✉️</em>
-            <a href="mailto:hector.morales@example.com">hector.morales@example.com</a>
-          </li>
-          <li>
-            <em class="icon">🐙</em>
-            <a href="https://github.com/HECTORGMHM" target="_blank" rel="noopener noreferrer">github.com/HECTORGMHM</a>
-          </li>
-          <li>
-            <em class="icon">📍</em>
-            Orizaba, Veracruz, México
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Héctor Gael Morales Moreno · Hecho con HTML, CSS &amp; JavaScript</p>
-    </footer>
+    </div><!-- /.cv-wrapper -->
 
     <script src="script.js"></script>
   </body>
