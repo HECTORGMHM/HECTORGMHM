@@ -1,58 +1,24 @@
 /**
- * Hash-based SPA navigation.
- * Highlights the nav link that matches the current URL hash or
- * the section closest to the top of the viewport while scrolling.
+ * Animates skill bar fills when they scroll into view.
+ * Each .skill-bar__fill element reads its target width from data-width (0–100).
  */
 
-const sections = Array.from(document.querySelectorAll('main section[id]'));
-const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
-
-/**
- * Remove the "active" class from all nav links, then add it to the
- * link whose href matches the given section id.
- * @param {string} id - Section id to mark as active.
- */
-function setActiveLink(id) {
-  navLinks.forEach((link) => {
-    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-  });
-}
-
-/**
- * Determine which section is currently in view and update the
- * active nav link accordingly.
- */
-function onScroll() {
-  const scrollY = window.scrollY;
-
-  // Find the last section whose top is at or above the current scroll position
-  let current = sections[0];
-  sections.forEach((section) => {
-    if (section.offsetTop - 80 <= scrollY) {
-      current = section;
+function animateSkillBars(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const fill = entry.target;
+      const targetWidth = fill.getAttribute('data-width') || 0;
+      fill.style.width = targetWidth + '%';
+      observer.unobserve(fill);
     }
   });
-
-  if (current) {
-    setActiveLink(current.id);
-  }
 }
 
-// Highlight on hash change (e.g. clicking a nav link)
-window.addEventListener('hashchange', () => {
-  const id = window.location.hash.slice(1);
-  if (id) setActiveLink(id);
-});
+const skillFills = Array.from(document.querySelectorAll('.skill-bar__fill'));
 
-// Highlight on scroll
-window.addEventListener('scroll', onScroll, { passive: true });
-
-// Set initial active link on page load
-(function init() {
-  const hash = window.location.hash.slice(1);
-  if (hash) {
-    setActiveLink(hash);
-  } else {
-    onScroll();
-  }
-})();
+if (skillFills.length > 0) {
+  const observer = new IntersectionObserver(animateSkillBars, {
+    threshold: 0.2,
+  });
+  skillFills.forEach((fill) => observer.observe(fill));
+}
